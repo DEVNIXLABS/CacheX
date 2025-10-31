@@ -1,0 +1,33 @@
+{
+  "name": "cachex",
+  "version": "1.0.0",
+  "description": "The Hybrid Caching Engine for Modern JavaScript Apps",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "babel src --out-dir dist --presets=@babel/preset-env",
+    "dev": "webpack --mode development --watch",
+    "example": "npm run build && node -e 'require(\"./dist/index.js\"); console.log(\"Build successful!\")'"
+  },
+  "keywords": [
+    "cache",
+    "caching",
+    "hybrid",
+    "memory",
+    "localstorage",
+    "indexeddb",
+    "ttl",
+    "performance"
+  ],
+  "author": "CacheX Team",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.28.3",
+    "@babel/core": "^7.28.5",
+    "@babel/preset-env": "^7.28.5",
+    "babel-loader": "^10.0.0",
+    "jest": "^29.7.0",
+    "webpack": "^5.0.0",
+    "webpack-cli": "^4.0.0"
+  }
+}
